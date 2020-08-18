@@ -15,15 +15,13 @@ window.onload = () => {
     entries.forEach((entry) => {
       console.log(entry.intersectionRatio);
       if (entry.isIntersecting) {
-        console.log('visible')
         entry.target.style.opacity = 1;
-        entry.target.classList.add('sticky')
-        entry.target.classList.add('bottom-0')
+        // entry.target.classList.add('sticky')
+        // entry.target.classList.add('bottom-0')
         document.addEventListener('scroll', rotateLens)
       } else {
-        console.log('hidden')
-        entry.target.classList.remove('sticky')
-        entry.target.classList.remove('bottom-0')
+        // entry.target.classList.remove('sticky')
+        // entry.target.classList.remove('bottom-0')
         document.removeEventListener('scroll', rotateLens)
       }
     })

@@ -17169,6 +17169,8 @@ video {
           animation: bounce 1s infinite;
 }
 
+@import '../node_modules/animate.css/animate.css';
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
