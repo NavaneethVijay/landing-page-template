@@ -59,6 +59,27 @@
         left: 35%;
         bottom: -35%;
       }
+      @media(max-width: 1024px){
+        .lens {
+          width: 350px;
+          height: 350px;
+        }
+        .lens1 {
+          position: absolute;
+          left: 60%;
+          top: 0%;
+        }
+      .lens2 {
+        position: absolute;
+        right: 35%;
+        top: 20%;
+      }
+      .lens3 {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+      }
+      }
     </style>
   </head>
   <body class="bg-gray-900 min-h-screen md:px-10 md:py-10">
@@ -67,15 +88,29 @@
         class="content text-white px-10 flex flex-col items-center justify-center h-full"
       >
         <img
-          class="block w-64"
+          class="block w-48"
           src="https://static1.squarespace.com/static/52bcb171e4b0207b1fe5f639/t/58627aa5bebafb6533b0d4c5/1482848934128/mkbhd_white.png?format=750w"
           alt=""
           srcset=""
         />
-        <h1 class="text-5xl mt-8">MARQUES BROWNLEE.</h1>
-        <p class="text-xl font-light">
+        <h1 class="text-3xl md:text-6xl font-bold mt-8">MARQUES BROWNLEE.</h1>
+        <p class="text-xl md:text-2xl text-center font-light">
           He makes crispy tech videos on the internet. Follow him anywhere.
         </p>
+        <div class="flex items-center mt-6">
+          <div class="mr-4">
+            <a href="https://www.facebook.com/MKBHD/"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+          </div>
+          <div class="mr-4">
+            <a href="https://www.youtube.com/channel/UCBJycsmduvYEL83R_U4JriQ"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+          </div>
+          <div class="mr-4">
+            <a href="https://twitter.com/MKBHD"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+          </div>
+          <div class="mr-4">
+            <a href="http://instagram.com/mkbhd"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+          </div>
+        </div>
       </div>
       <div class="hero-shadow"></div>
     </section>
@@ -84,13 +119,13 @@
       style="z-index: -1;"
       class="hero-main bg-black py-20 my-10 sticky bottom-0 min-section flex items-center justify-center overflow-hidden"
     >
-      <div class="content text-white px-10 text-center flex items-center">
-        <div class="w-1/2 mx-auto">
+      <div class="content text-white px-10 text-center flex flex-wrap pt-32 md:pt-0 items-center">
+        <div class="w-full md:w-1/2 mx-auto">
           <img class="w-1/2 mx-auto" src="./img/mkbhd.png" alt="" srcset="" />
         </div>
-        <div class="w-1/2 text-left mx-auto">
-          <h1 class="font-medium text-6xl my-4">Marques Brownlee</h1>
-          <h3 class="text-xl opacity-50 w-3/4">
+        <div class="w-full md:w-1/2 text-left mx-auto">
+          <h1 class="font-bold text-4xl md:text-6xl my-4">Marques Brownlee</h1>
+          <h3 class="text-xl md:w-3/4 font-light">
             Marques Keith Brownlee, also known professionally as MKBHD, is an
             American YouTuber and professional ultimate frisbee player, best
             known for his technology-focused videos and podcast. The channel,
@@ -111,12 +146,11 @@
       >
         <div class="text-white flex items-center justify-center h-full">
           <div>
-            <h1 class="font-medium text-5xl">
-              Take a closer look.
+            <h1 class="font-medium text-5xl leading-none mb-8">
+              He always has a <br/> cool intro music.
             </h1>
-            <h3 class="text-2xl opacity-50">
-              Two sizes. Four finishes. <br />
-              steel and glass design.
+            <h3 class="text-2xl">
+              Go check them on <a class="inline-block text-green-400  font-semibold text-xl" href="https://open.spotify.com/playlist/0ZXVX604hmghJgqWCMsqcU">Spotify</a> 
             </h3>
           </div>
         </div>
@@ -152,7 +186,7 @@
       <div
         class="px-10 absolute top-0 left-0 h-full w-full flex items-center justify-center"
       >
-        <h1 class="text-6xl font-bold">
+        <h1 class="text-3xl md:text-6xl font-bold">
           He owns a 
           <span class="text-red-700">
             RED
@@ -171,12 +205,11 @@
           class="bg-black text-white flex items-center justify-center h-full"
         >
           <div class="px-10">
-            <h1 class="font-medium text-5xl">
-              Matte Black. <br/> Everything
+            <h1 class="font-medium text-5xl leading-none mb-8">
+             Matte Black. <br/> Everything.
             </h1>
-            <h3 class="text-2xl opacity-50">
-              Two sizes. Four finishes. <br />
-              steel and glass design.
+            <h3 class="text-2xl">
+             Because why not ? <a class="inline-block text-red-500 font-semibold text-xl" href="http://shop.mkbhd.com/">Shop Now</a> 
             </h3>
           </div>
         </div>
@@ -185,76 +218,106 @@
         style="height: calc(100vh - 70px);"
         class="w-full md:w-1/2 py-10 px-5 overflow-hidden"
       >
-        <div style="background-image: url(/img/qqezu3ga1te51.jpg); background-size: cover;" class="bg-black h-full">
+        <div style="background-image: url(https://i.redd.it/svfiprpc4bi51.jpg); background-size: cover;" class="bg-black h-full">
         </div>
       </div>
     </section>
 
     <section class="text-white px-10 py-20">
-      <div class="max-w-5xl mx-auto">
+      <div class="max-w-6xl mx-auto">
         <div class="mb-10">
-          <h1 class="text-6xl font-semibold">
-            Smartphone Awards
+          <h1 class="text-5xl md:text-6xl font-semibold">
+            Smartphone Awards 2019
           </h1>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-1/3 mb-4">
+          <div class="w-full md:w-1/3 mb-4">
             <div class="p-2">
-              <h3 class="font-medium text-5xl">
-                40%
+              <h3 class="font-medium text-2xl">
+                 Asus ROG Phone II
               </h3>
               <p class="opacity-25 text-xl w-3/4">
-                more light capture with Telephoto
+                Best Big Smartphone
               </p>
             </div>
           </div>
-          <div class="w-1/3 mb-4">
+          <div class="w-full md:w-1/3 mb-4">
             <div class="p-2">
-              <h3 class="font-medium text-5xl">
-                40%
+              <h3 class="font-medium text-2xl">
+                Samsung Galaxy S10e
               </h3>
               <p class="opacity-25 text-xl w-3/4">
-                more light capture with Telephoto
+                Best Compact Smartphone
               </p>
             </div>
           </div>
-          <div class="w-1/3 mb-4">
+          <div class="w-full md:w-1/3 mb-4">
             <div class="p-2">
-              <h3 class="font-medium text-5xl">
-                40%
+              <h3 class="font-medium text-2xl">
+                Apple iPhone 11 Pro & iPhone 11 Pro Max
               </h3>
               <p class="opacity-25 text-xl w-3/4">
-                more light capture with Telephoto
+                Best Camera
               </p>
             </div>
           </div>
-          <div class="w-1/3 mb-4">
+          <div class="w-full md:w-1/3 mb-4">
             <div class="p-2">
-              <h3 class="font-medium text-5xl">
-                40%
+              <h3 class="font-medium text-2xl">
+                Redmi K20 Pro
               </h3>
               <p class="opacity-25 text-xl w-3/4">
-                more light capture with Telephoto
+                Best Budget Smartphone
               </p>
             </div>
           </div>
-          <div class="w-1/3 mb-4">
+          <div class="w-full md:w-1/3 mb-4">
             <div class="p-2">
-              <h3 class="font-medium text-5xl">
-                40%
+              <h3 class="font-medium text-2xl">
+                Asus ROG Phone II
               </h3>
               <p class="opacity-25 text-xl w-3/4">
-                more light capture with Telephoto
+                Best Battery Life
               </p>
             </div>
           </div>
-          <div class="w-1/3 mb-4">
+          <div class="w-full md:w-1/3 mb-4">
             <div class="p-2">
-              <h3 class="font-medium text-5xl">
-                40%
+              <h3 class="font-medium text-2xl">
+                Samsung Galaxy Fold
               </h3>
               <p class="opacity-25 text-xl w-3/4">
-                more light capture with Telephoto
+                Best Design
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 mb-4">
+            <div class="p-2">
+              <h3 class="font-medium text-2xl">
+                Asus ROG Phone II
+              </h3>
+              <p class="opacity-25 text-xl w-3/4">
+                Most Improved
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 mb-4">
+            <div class="p-2">
+              <h3 class="font-medium text-2xl">
+                Google Pixel 4
+              </h3>
+              <p class="opacity-25 text-xl w-3/4">
+                Bust of the Year
+              </p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 mb-4">
+            <div class="p-2">
+              <h3 class="font-medium text-2xl">
+                OnePlus 7 Pro
+              </h3>
+              <p class="opacity-25 text-xl w-3/4">
+                MVP (Best Overall)
               </p>
             </div>
           </div>
